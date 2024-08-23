@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Flashcard from './components/Flashcard';
 import './App.css';
-import { queries } from '@testing-library/react';
 
 function App() {
   const [cards] = useState([

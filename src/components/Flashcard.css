@@ -21,6 +21,7 @@
 
 .flashcard .front {
     background: #f9f9f9;
+    transform: rotateY(0deg);
 }
 
 .flashcard .back {
@@ -29,11 +30,11 @@
     transform: rotateY(180deg);
 }
 
-.flashcard.flipped .front {
-    transform: rotateY('180deg')
+.flipped .front {
+    transform: rotateY(-180deg)
 }
 
-.flashcard.flipped .back {
-    transform: rotateY('0');
+.flipped .back {
+    transform: rotateY(0deg);
 }
 
