@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Flashcard from './components/Flashcard';
+import LoginPage from './components/LoginPage';
 import './App.css';
 
 function App() {
+  const [decks] = useState(null);
   const [cards] = useState([
     {question: 'What is the capital of France?', answer: 'Paris'},
     {question: 'What is 2 + 2?', answer: '4'},
@@ -20,14 +23,29 @@ function App() {
   }
 
   return(
-    <div className="app">
-      <h1>Flashcard App</h1>
-      <Flashcard card={cards[currentIndex]} />
-      <div className="controls">
-        <button onClick={handlePrevious}>Previous</button>
-        <button onClick={handleNext}>Next</button>
+    <Router>
+      <div className="app">
+        <h1>Flashcard App</h1>
+        <Link to="/login">
+          <button>Login Your Account</button>
+        </Link>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <div>
+                <Flashcard card={cards[currentIndex]} />
+                <div className="controls">
+                  <button onClick={handlePrevious}>Previous</button>
+                  <button onClick={handleNext}>Next</button>
+                </div>
+              </div>
+            }
+          />
+          <Route path='/login' element={<LoginPage/>}/>
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 };
 
