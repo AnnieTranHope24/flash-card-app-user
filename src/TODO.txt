@@ -1,1 +1,5 @@
-Add decks to the app: each deck is a collection of cards
+User log in --> HomePage --> display data of User
+Set up the database and stuff
+Redirect after signing in by Google
+
+Bug when signing in with email and cannot put the data into the database
