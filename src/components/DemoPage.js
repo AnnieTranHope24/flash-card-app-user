@@ -3,9 +3,8 @@ import Flashcard from './Flashcard';
 import '../App.css';
 
 import { Routes, Route, Link } from 'react-router-dom';
-import AddDeck from './AddDeck';
 
-function HomePage(){
+function DemoPage(){
     const [decks] = useState(null);
     const [cards] = useState([
       {question: 'What is the capital of France?', answer: 'Paris'},
@@ -30,8 +29,10 @@ function HomePage(){
                 <button onClick={handlePrevious}>Previous</button>
                 <button onClick={handleNext}>Next</button>
             </div>
-            <AddDeck/>
+            <Link to="/login">
+                <button>Login Your Account</button>
+            </Link>
         </div>
     );
 };
-export default HomePage;
+export default DemoPage;

@@ -1,5 +1,22 @@
+Implement add deck and add card****
+Demo version before user sign in****
+Refactor the app and learn to link user to their own page****
+
+Also want a functionality to add one card
+to multiple decks --> cards collection???
+--> create a new card and copy it over
+
+If users add card without adding decks first --> create a default deck for them
+User log in --> need to add card, add deck, import file
+If user doesn't sign in, where data will be stored?
 User log in --> HomePage --> display data of User
 Set up the database and stuff
-Redirect after signing in by Google
+Redo the HomePage after signing in:
+    * Page after signing in: has the data of that user
+    * email of that user
+    * Logout button
+
+Add navbar and bottom bar
 
 Bug when signing in with email and cannot put the data into the database
+

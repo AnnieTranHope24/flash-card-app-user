@@ -1,0 +1,68 @@
+.add-deck-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    margin: 10px; /* Margin around button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .add-deck-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .modal {
+    background: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1002;
+  }
+  
+  .modal-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .modal-content {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+  }
+  
+  .modal-close-button {
+    background-color: #f44336; /* Red background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .modal-close-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
